@@ -7,7 +7,7 @@ function Experience() {
         <div className="experience-card">
           <h3>Backend Developer Intern</h3>
           <h4>Genese Solution Pvt. Ltd.</h4>
-          <p className="experience-duration">June 16 2025 – September 18 2025 | Kathmandu, Nepal</p>
+          <p className="experience-duration">June 16 2025 – September 18 2025 | Lalitpur, Nepal</p>
 
           <ul>
             <li>Worked on backend APIs and integrations for Austin Intelligence (Django-based platform).</li>
