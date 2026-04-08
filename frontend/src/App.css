@@ -527,3 +527,102 @@ p {
   }
 }
 
+/* Certifications Section - Same Style as Projects */
+.certifications {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* Shared Links Layout for Projects + Certifications */
+.project-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+/* Make certificate button match project buttons */
+.certificate-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #0f172a;
+  background-color: #38bdf8;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.certificate-btn:hover {
+  background-color: #0ea5e9;
+}
+
+/* Certificate Modal */
+.certificate-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.92);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  padding: 20px;
+}
+
+.certificate-modal-content {
+  position: relative;
+  max-width: 1000px;
+  width: 100%;
+  background: #1e293b;
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid #334155;
+}
+
+.certificate-preview {
+  width: 100%;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 12px;
+  display: block;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #38bdf8;
+  color: #0f172a;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close-btn:hover {
+  background: #0ea5e9;
+}
+
+/* Mobile Fix for Certificate Modal */
+@media (max-width: 768px) {
+  .certifications {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .certificate-modal-content {
+    padding: 12px;
+  }
+
+  .close-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+}

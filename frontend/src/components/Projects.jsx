@@ -1,6 +1,14 @@
 function Projects() {
   const projectList = [
     {
+      title: "Task Flow",
+      description:
+        "A Jira-inspired full-stack task management platform with strong backend architecture, JWT authentication, role-based access control, admin APIs, and task workflow management.",
+      tech: "Node.js, Express.js, MongoDB, React.js, Tailwind CSS, JWT",
+      github: "https://github.com/ujwal284/TaskFlow-Full-Stack-Task-Management-App",
+      live: "https://task-flow-full-stack-task-managemen.vercel.app/",
+    },
+    {
       title: "Fit Sync",
       description:
         "A MERN stack fitness tracking application with user authentication, workout tracking, and personalized dashboards.",
@@ -25,7 +33,7 @@ function Projects() {
       title: "Genbol",
       description:
         "A web scraping tool built with Python and BeautifulSoup to fetch and manage notices dynamically.",
-      tech: "Python, BeautifulSoup",
+      tech: "Python, BeautifulSoup, Requests",
       github: "https://github.com/ujwal284",
     },
   ];
@@ -40,9 +48,18 @@ function Projects() {
               <h3>{project.title}</h3>
               <p>{project.description}</p>
               <span>{project.tech}</span>
-              <a href={project.github} target="_blank" rel="noreferrer">
-                View Code
-              </a>
+
+              <div className="project-links">
+                <a href={project.github} target="_blank" rel="noreferrer">
+                  View Code
+                </a>
+
+                {project.live && (
+                  <a href={project.live} target="_blank" rel="noreferrer">
+                    Live Demo
+                  </a>
+                )}
+              </div>
             </div>
           ))}
         </div>
