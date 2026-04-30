@@ -6,8 +6,10 @@ function Hero() {
         <h2>Ujwal Raj Khanal</h2>
         <h3>Backend-Focused Full Stack Developer</h3>
         <p className="hero-description">
-          I build clean, scalable, and user-friendly web applications using
-          JavaScript, React, Node.js, Express.js, MongoDB, and Django.
+          I build scalable backend systems and APIs using Node.js, Express.js,
+          MongoDB, and Django, with a strong focus on clean architecture,
+          performance, and real-world problem solving.
+
         </p>
 
         <div className="hero-buttons">

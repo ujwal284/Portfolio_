@@ -4,16 +4,17 @@ function About() {
       <div className="container about-content">
         <h2>About Me</h2>
         <p>
-          I am a backend-focused developer passionate about building practical,
-          scalable, and clean web applications. I have hands-on experience with
-          Node.js, Express.js, MongoDB, Django, and React, and I enjoy solving
-          real-world problems through code.
+          I am a backend-focused developer specializing in building scalable,
+          efficient, and maintainable web applications. My core expertise lies
+          in Node.js, Express.js, MongoDB, and Django, where I design and develop
+          robust APIs and backend systems.
         </p>
         <p>
-          I recently completed a backend internship where I worked on APIs,
-          web scraping tools, and real-world development tasks. I am currently
-          focused on improving my full-stack development skills and preparing
-          for junior developer opportunities.
+         During my recent backend internship, I worked on real-world projects
+          involving API development, web scraping, and system design, gaining
+          hands-on experience in solving practical engineering challenges.
+          Currently, I am focused on strengthening my backend architecture skills
+          and preparing for junior backend developer roles.
         </p>
       </div>
     </section>
