@@ -22,19 +22,19 @@ function Hero() {
 
         <div className="hero-stats">
           <div>
-            <h4>5+</h4>
+            <h4>25+</h4>
             <span>Projects Built</span>
           </div>
 
           <div>
-            <h4>10+</h4>
+            <h4>15+</h4>
             <span>Technologies</span>
           </div>
 
-          <div>
+          {/* <div>
             <h4>1</h4>
             <span>Professional Internship</span>
-          </div>
+          </div> */}
         </div>
 
         <div className="hero-highlights">
