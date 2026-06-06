@@ -1,62 +1,68 @@
 function Projects() {
   const projectList = [
     {
-      title: "Task Flow",
+      title: "TaskFlow Platform",
       description:
-        "Designed and developed a scalable Jira-inspired task management platform with a strong backend architecture. Implemented secure JWT-based authentication, role-based access control (RBAC), and modular REST APIs to handle task workflows, user roles, and admin operations efficiently.",
+        "A Jira-inspired task management platform designed to streamline team collaboration, task tracking, and workflow management through a scalable full-stack architecture.",
       highlights: [
         "Built 15+ RESTful API endpoints for task and user management",
-        "Implemented role-based authorization (Admin/User)",
-        "Structured backend using MVC architecture for scalability",
+        "Implemented secure JWT authentication and role-based access control",
+        "Designed scalable backend architecture using MVC principles",
       ],
       tech: "Node.js, Express.js, MongoDB, React.js, Tailwind CSS, JWT",
-      github: "https://github.com/ujwal284/TaskFlow-Full-Stack-Task-Management-App",
-      live: "https://task-flow-full-stack-task-managemen.vercel.app/",
+      github:
+        "https://github.com/ujwal284/TaskFlow-Full-Stack-Task-Management-App",
+      live:
+        "https://task-flow-full-stack-task-managemen.vercel.app/",
     },
+
     {
-      title: "Fit Sync",
+      title: "FitSync Application",
       description:
-        "Developed a full-stack fitness tracking application with secure user authentication and personalized dashboards. Focused on backend data handling, user activity tracking, and efficient API design.",
+        "A full-stack fitness tracking application that enables users to monitor workouts, manage fitness goals, and visualize personal progress through an intuitive dashboard.",
       highlights: [
-        "Designed APIs for workout tracking and user data management",
-        "Implemented authentication and session handling",
-        "Built structured database models for scalable data storage",
+        "Developed secure authentication and user management",
+        "Designed APIs for workout tracking and data management",
+        "Created structured database models for efficient storage",
       ],
-      tech: "React, Node.js, Express.js, MongoDB",
+      tech: "React.js, Node.js, Express.js, MongoDB",
       github: "https://github.com/ujwal284/Dissertation-Project",
     },
+
     {
-      title: "Task Manager API",
+      title: "Task Management API",
       description:
-        "Built a production-ready RESTful API for task management with clean architecture and secure authentication. Focused on writing maintainable backend logic and efficient database operations.",
+        "A production-ready RESTful API providing secure task management functionality with authentication, validation, and optimized database operations.",
       highlights: [
-        "Implemented full CRUD operations with validation",
+        "Implemented complete CRUD functionality",
         "Integrated JWT authentication and protected routes",
-        "Handled error management and middleware structure",
+        "Developed middleware-based error handling architecture",
       ],
       tech: "Node.js, Express.js, MongoDB",
       github: "https://github.com/ujwal284/Task-Manager-Api",
     },
+
     {
-      title: "Store API",
+      title: "E-Commerce Backend API",
       description:
-        "Developed an e-commerce backend system handling product management, user authentication, and order processing with scalable API design.",
+        "A backend solution for e-commerce applications handling products, users, authentication, and order processing through scalable API design.",
       highlights: [
-        "Designed APIs for products, users, and orders",
-        "Implemented authentication and authorization logic",
-        "Optimized database queries for better performance",
+        "Designed product, user, and order management APIs",
+        "Implemented authentication and authorization systems",
+        "Optimized database queries for improved performance",
       ],
       tech: "Node.js, Express.js, MongoDB",
       github: "https://github.com/ujwal284/Store-Api",
     },
+
     {
-      title: "Genbol (Web Scraper)",
+      title: "Genbol Automation Tool",
       description:
-        "Built a web scraping tool to extract and manage dynamic notice data from websites using Python. Focused on automation and data extraction reliability.",
+        "An automated web scraping solution developed to collect, process, and manage notice data efficiently from online sources.",
       highlights: [
-        "Scraped and parsed structured data using BeautifulSoup",
-        "Handled HTTP requests and response parsing",
-        "Automated data collection workflow",
+        "Built data extraction workflows using BeautifulSoup",
+        "Automated notice collection and processing",
+        "Handled dynamic website content retrieval and parsing",
       ],
       tech: "Python, BeautifulSoup, Requests",
       github: "https://github.com/ujwal284",
@@ -66,28 +72,44 @@ function Projects() {
   return (
     <section id="projects" className="projects">
       <div className="container">
-        <h2>Projects</h2>
+        <h2>Featured Work</h2>
+
+        <p className="section-description">
+          Selected projects showcasing expertise in full-stack development,
+          backend architecture, API development, automation, and scalable
+          software solutions.
+        </p>
+
         <div className="projects-grid">
           {projectList.map((project, index) => (
             <div className="project-card" key={index}>
               <h3>{project.title}</h3>
+
               <p>{project.description}</p>
 
-              <ul>
+              <ul className="project-highlights">
                 {project.highlights.map((point, i) => (
-                  <li key={i}>• {point}</li>
+                  <li key={i}>{point}</li>
                 ))}
               </ul>
 
               <span>{project.tech}</span>
 
               <div className="project-links">
-                <a href={project.github} target="_blank" rel="noreferrer">
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   View Code
                 </a>
 
                 {project.live && (
-                  <a href={project.live} target="_blank" rel="noreferrer">
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Live Demo
                   </a>
                 )}

@@ -2,9 +2,10 @@ function Contact() {
   return (
     <section id="contact" className="contact">
       <div className="container">
-        <h2>Contact Me</h2>
+        <h2>Let's Discuss Your Project</h2>
         <p className="contact-text">
-          If you'd like to work together or discuss opportunities, feel free to reach out.
+          Looking for a website, web application, backend solution, or technical support?
+          Let's discuss your requirements and explore the best solution for your project.
         </p>
 
         <form
@@ -31,6 +32,13 @@ function Contact() {
             rel="noreferrer"
           >
             LinkedIn
+          </a>
+          <a
+            href="https://wa.me/9847399383"
+            target="_blank"
+            rel="noreferrer"
+          >
+            WhatsApp
           </a>
           <a
             href="https://github.com/ujwal284"

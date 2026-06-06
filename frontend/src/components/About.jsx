@@ -3,18 +3,30 @@ function About() {
     <section id="about" className="about">
       <div className="container about-content">
         <h2>About Me</h2>
+
         <p>
-          I am a backend-focused developer specializing in building scalable,
-          efficient, and maintainable web applications. My core expertise lies
-          in Node.js, Express.js, MongoDB, and Django, where I design and develop
-          robust APIs and backend systems.
+          I am a Full Stack Web Developer specializing in building modern
+          websites, custom web applications, and scalable backend systems.
         </p>
+
         <p>
-         During my recent backend internship, I worked on real-world projects
-          involving API development, web scraping, and system design, gaining
-          hands-on experience in solving practical engineering challenges.
-          Currently, I am focused on strengthening my backend architecture skills
-          and preparing for junior backend developer roles.
+          My expertise includes Next.js, React.js, Node.js, Express.js, MongoDB,
+          PostgreSQL, and Django. I focus on developing secure,
+          maintainable, and high-performance solutions that help businesses
+          improve their digital presence and streamline operations.
+        </p>
+
+        <p>
+          With hands-on experience in API development, web scraping,
+          database design, authentication systems, and full-stack
+          application development, I deliver solutions that are both
+          technically robust and business-focused.
+        </p>
+
+        <p>
+          Whether you need a business website, management platform,
+          custom software solution, or backend infrastructure, I can help
+          transform your ideas into reliable digital products.
         </p>
       </div>
     </section>

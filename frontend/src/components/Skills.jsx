@@ -1,27 +1,43 @@
 function Skills() {
-  const skills = [
-    "JavaScript",
-    "React.js",
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-    "PostgreSQL",
-    "Django",
-    "HTML",
-    "CSS",
-    "Git",
-    "GitHub",
-    "Postman"
+  const categories = [
+    {
+      title: "Frontend",
+      items: ["Next.js","React.js", "JavaScript", "HTML", "CSS"],
+    },
+    {
+      title: "Backend",
+      items: ["Node.js", "Express.js", "Django"],
+    },
+    {
+      title: "Databases",
+      items: ["MongoDB", "PostgreSQL"],
+    },
+    {
+      title: "Tools & Workflow",
+      items: ["Git", "GitHub", "Postman"],
+    },
   ];
 
   return (
     <section id="skills" className="skills">
       <div className="container">
-        <h2>Skills</h2>
-        <div className="skills-grid">
-          {skills.map((skill, index) => (
-            <div key={index} className="skill-card">
-              {skill}
+        <h2>Technical Expertise</h2>
+
+        <p className="section-description">
+          Technologies and tools used to deliver scalable and maintainable
+          digital solutions.
+        </p>
+
+        <div className="expertise-grid">
+          {categories.map((category, index) => (
+            <div className="expertise-card" key={index}>
+              <h3>{category.title}</h3>
+
+              <ul>
+                {category.items.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
