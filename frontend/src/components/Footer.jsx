@@ -1,14 +1,15 @@
 function Footer() {
   return (
     <footer className="footer">
-
       <div className="container">
 
         <h3>Ujwal Raj Khanal</h3>
 
         <p>
-          Full Stack Web Developer specializing in modern web applications,
-          scalable backend systems, and custom digital solutions.
+          Full Stack Software Engineer passionate about building scalable,
+          high-performance web applications with React, Next.js, Node.js,
+          Express.js, and MongoDB. Always open to collaborating on exciting
+          projects and new opportunities.
         </p>
 
         <div className="footer-links">
@@ -29,6 +30,14 @@ function Footer() {
             LinkedIn
           </a>
 
+          <a
+            href="https://ujwalrajkhanal.com.np"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Portfolio
+          </a>
+
           <a href="mailto:ujwalkhanal284@gmail.com">
             Email
           </a>
@@ -36,11 +45,11 @@ function Footer() {
         </div>
 
         <p className="copyright">
-          © 2026 Ujwal Raj Khanal. All rights reserved.
+          © {new Date().getFullYear()} Ujwal Raj Khanal. Built with React &
+          Tailwind CSS.
         </p>
 
       </div>
-
     </footer>
   );
 }

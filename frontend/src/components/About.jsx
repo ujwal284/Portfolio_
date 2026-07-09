@@ -5,29 +5,35 @@ function About() {
         <h2>About Me</h2>
 
         <p>
-          I am a Full Stack Web Developer specializing in building modern
-          websites, custom web applications, and scalable backend systems.
+          Hi, I'm <strong>Ujwal Raj Khanal</strong>, a Full Stack Software Engineer
+          passionate about building modern, scalable, and user-friendly web
+          applications. I enjoy transforming ideas into real-world digital
+          products that solve meaningful business problems.
         </p>
 
         <p>
-          My expertise includes Next.js, React.js, Node.js, Express.js, MongoDB,
-          PostgreSQL, and Django. I focus on developing secure,
-          maintainable, and high-performance solutions that help businesses
-          improve their digital presence and streamline operations.
+          My primary tech stack includes <strong>Next.js, React.js, Node.js,
+          Express.js, MongoDB, PostgreSQL, and Django</strong>. I develop complete
+          full-stack solutions—from responsive frontend interfaces to secure
+          backend APIs, database design, authentication, and deployment.
         </p>
 
         <p>
-          With hands-on experience in API development, web scraping,
-          database design, authentication systems, and full-stack
-          application development, I deliver solutions that are both
-          technically robust and business-focused.
+          During my internship at Genese Solution, I gained professional
+          experience working on production applications, backend development,
+          automation tools, and collaborative software development workflows.
+          I also served as an IT Head, managing networking, infrastructure,
+          system administration, and technical operations.
         </p>
 
         <p>
-          Whether you need a business website, management platform,
-          custom software solution, or backend infrastructure, I can help
-          transform your ideas into reliable digital products.
+          I enjoy creating software that is clean, maintainable, secure, and
+          easy to scale. Whether it's a business website, SaaS platform,
+          management system, or custom web application, my goal is to deliver
+          solutions that provide real value to users and businesses.
         </p>
+
+        
       </div>
     </section>
   );

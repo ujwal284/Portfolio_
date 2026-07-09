@@ -1,58 +1,71 @@
-function WhyWorkWithMe() {
+function WhyHireMe() {
   const reasons = [
     {
-      title: "Business-Focused Solutions",
+      title: "Full Stack Development",
       description:
-        "I build websites and applications that solve real business problems, improve online presence, and support growth.",
+        "Experienced in building complete web applications from responsive frontend interfaces to secure backend APIs, databases, and production deployments.",
     },
+
     {
-      title: "Modern Full-Stack Development",
+      title: "Real-World Experience",
       description:
-        "Using modern technologies such as React, Node.js, Express.js, MongoDB, PostgreSQL, and Django.",
+        "Hands-on experience through a professional software development internship, leadership in IT operations, and building production-ready applications from concept to deployment.",
     },
+
     {
-      title: "Scalable Architecture",
+      title: "Problem Solving",
       description:
-        "Applications are designed with maintainability, security, and future scalability in mind.",
+        "I enjoy solving complex technical challenges by writing clean, maintainable, and scalable code that delivers practical business value.",
     },
+
     {
-      title: "Clear Communication",
+      title: "Modern Technology Stack",
       description:
-        "Regular updates, transparent progress reporting, and collaborative development throughout the project.",
+        "Proficient with React, Next.js, Node.js, Express.js, MongoDB, PostgreSQL, Django, Git, and modern software development workflows.",
     },
+
     {
-      title: "Performance & Reliability",
+      title: "Continuous Learning",
       description:
-        "Focus on optimized performance, clean code practices, and reliable user experiences.",
+        "Technology evolves rapidly, and I continuously improve my skills by building real-world projects, exploring new tools, and staying current with industry best practices.",
     },
+
     {
-      title: "Long-Term Support",
+      title: "Collaborative Mindset",
       description:
-        "Support for maintenance, improvements, bug fixes, and future feature development.",
+        "Comfortable working in Agile teams, collaborating with developers, communicating effectively, and contributing throughout the software development lifecycle.",
     },
   ];
 
   return (
-    <section id="why-work-with-me" className="why-work">
+    <section id="why-hire-me" className="why-work">
       <div className="container">
-        <h2>Why Work With Me</h2>
+
+        <h2>Why Hire Me</h2>
 
         <p className="section-description">
-          Delivering professional web solutions with a focus on quality,
-          performance, and long-term business value.
+          Beyond writing code, I focus on delivering reliable software,
+          collaborating effectively, and continuously improving my skills to
+          build products that create real value.
         </p>
 
         <div className="why-grid">
+
           {reasons.map((reason, index) => (
             <div className="why-card" key={index}>
+
               <h3>{reason.title}</h3>
+
               <p>{reason.description}</p>
+
             </div>
           ))}
+
         </div>
+
       </div>
     </section>
   );
 }
 
-export default WhyWorkWithMe;
+export default WhyHireMe;

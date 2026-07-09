@@ -4,64 +4,91 @@ function Hero() {
       <div className="container hero-content">
 
         <p className="hero-intro">
-          Full Stack Web Developer
+          👋 Hello, I'm
         </p>
 
-        <h2>Ujwal Raj Khanal</h2>
+        <h1>Ujwal Raj Khanal</h1>
+
+        <h2>
+          Full Stack Software Engineer
+        </h2>
 
         <h3>
-          Building Modern Websites, Web Applications & Scalable Digital Solutions
+          Building Modern, Scalable & User-Centric Web Applications with
+          React, Next.js, Node.js & MongoDB
         </h3>
 
         <p className="hero-description">
-          I help businesses, startups, and professionals establish a strong
-          online presence through custom websites, web applications, backend
-          systems, and automation solutions built for performance, security,
-          and long-term growth.
+          I'm a passionate Full Stack Software Engineer from Nepal with
+          experience developing production-ready web applications,
+          REST APIs, authentication systems, and modern user interfaces.
+          I enjoy transforming ideas into reliable digital products that
+          solve real business problems while delivering clean, maintainable,
+          and scalable solutions.
         </p>
 
         <div className="hero-stats">
+
           <div>
-            <h4>25+</h4>
-            <span>Projects Built</span>
+            <h4>6+</h4>
+            <span>Projects Completed</span>
           </div>
 
           <div>
-            <h4>15+</h4>
-            <span>Technologies</span>
-          </div>
-
-          {/* <div>
             <h4>1</h4>
             <span>Professional Internship</span>
-          </div> */}
+          </div>
+
+          <div>
+            <h4>1</h4>
+            <span>IT Leadership Role</span>
+          </div>
+
         </div>
 
         <div className="hero-highlights">
-          <span>✓ Business Websites</span>
-          <span>✓ Web Applications</span>
-          <span>✓ Backend Development</span>
-          <span>✓ API Integrations</span>
+
+          <span>⚡ Full Stack Development</span>
+
+          <span>⚡ Next.js & React</span>
+
+          <span>⚡ REST API Development</span>
+
+          <span>⚡ Responsive UI</span>
+
+          <span>⚡ Database Design</span>
+
+          <span>⚡ Problem Solver</span>
+
         </div>
 
         <div className="hero-buttons">
-          <a href="#projects" className="btn primary-btn">
-            View Portfolio
+
+          <a
+            href="#projects"
+            className="btn primary-btn"
+          >
+            View Projects
           </a>
 
-          <a href="#contact" className="btn secondary-btn">
-            Request a Project
-          </a>
-
-          {/* <a
-            href="/resume.pdf"
-            className="btn resume-btn"
+          <a
+            href="/Ujwal_Raj_Khanal_ATS_Resume.pdf"
             target="_blank"
             rel="noreferrer"
+            className="btn secondary-btn"
           >
-            Download Resume
-          </a> */}
+            Download CV
+          </a>
+
+          <a
+            href="#contact"
+            className="btn outline-btn"
+          >
+            Contact Me
+          </a>
+
         </div>
+
       </div>
     </section>
   );

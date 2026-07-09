@@ -1,57 +1,61 @@
-function Services() {
-  const services = [
+function Expertise() {
+  const expertise = [
     {
-      title: "Business Websites",
+      title: "Full Stack Development",
       description:
-        "Professional, responsive websites designed to strengthen your online presence and attract potential customers.",
+        "Building modern, scalable web applications using React, Next.js, Node.js, Express.js, and MongoDB with clean architecture and maintainable code.",
     },
     {
-      title: "Custom Web Applications",
+      title: "Frontend Development",
       description:
-        "Tailored web solutions built around your business processes, workflows, and operational requirements.",
+        "Developing responsive, accessible, and high-performance user interfaces using React, Next.js, Tailwind CSS, HTML5, and JavaScript.",
     },
     {
-      title: "Backend Development",
+      title: "Backend Engineering",
       description:
-        "Scalable APIs, authentication systems, database architecture, and server-side application development.",
-    },
-    {
-      title: "API Integration",
-      description:
-        "Integration of third-party services, payment gateways, automation tools, and external platforms.",
+        "Designing secure REST APIs, authentication systems, business logic, and scalable server-side applications using Node.js and Express.js.",
     },
     {
       title: "Database Design",
       description:
-        "Efficient database architecture using MongoDB and PostgreSQL for performance and scalability.",
+        "Designing efficient MongoDB and PostgreSQL databases with optimized schemas, relationships, and query performance.",
     },
     {
-      title: "Website Maintenance",
+      title: "API Integration",
       description:
-        "Ongoing support, bug fixes, performance optimization, and feature enhancements.",
+        "Integrating third-party APIs, authentication providers, payment gateways, cloud services, and external business systems.",
+    },
+    {
+      title: "Deployment & Maintenance",
+      description:
+        "Deploying applications on Vercel and Render while maintaining performance, security, monitoring, and continuous improvements.",
     },
   ];
 
   return (
-    <section id="services" className="services">
+    <section id="expertise" className="services">
       <div className="container">
-        <h2>Services</h2>
+
+        <h2>Core Expertise</h2>
 
         <p className="section-description">
-          Helping businesses and professionals build reliable digital solutions.
+          My technical expertise covers the complete software development
+          lifecycle—from designing intuitive user interfaces to building secure
+          backend systems and deploying production-ready applications.
         </p>
 
         <div className="services-grid">
-          {services.map((service, index) => (
+          {expertise.map((item, index) => (
             <div className="service-card" key={index}>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
 }
 
-export default Services;
+export default Expertise;

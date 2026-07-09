@@ -1,88 +1,148 @@
 function Projects() {
   const projectList = [
     {
-      title: "TaskFlow Platform",
+      title: "GharFix (Beta)",
       description:
-        "A Jira-inspired task management platform designed to streamline team collaboration, task tracking, and workflow management through a scalable full-stack architecture.",
+        "A full-stack service marketplace connecting homeowners with trusted service professionals through a modern, responsive web application. Designed to simplify service booking while providing an intuitive experience for both customers and service providers.",
+
       highlights: [
-        "Built 15+ RESTful API endpoints for task and user management",
-        "Implemented secure JWT authentication and role-based access control",
-        "Designed scalable backend architecture using MVC principles",
+        "Built a complete full-stack application using React, Node.js, Express.js and MongoDB",
+        "Developed secure authentication, user management and service booking workflows",
+        "Designed responsive user interfaces optimized for desktop and mobile devices",
+        "Successfully deployed the beta version for real-world users",
       ],
-      tech: "Node.js, Express.js, MongoDB, React.js, Tailwind CSS, JWT",
+
+      tech:
+        "React.js • Node.js • Express.js • MongoDB • Tailwind CSS",
+
+      github: "https://github.com/ujwal284",
+
+      live: "https://ghar-fix-six.vercel.app/",
+    },
+
+    {
+      title: "TaskFlow Platform",
+
+      description:
+        "A Jira-inspired full-stack project management platform designed to improve collaboration, task tracking, and workflow management through scalable software architecture.",
+
+      highlights: [
+        "Built 15+ RESTful API endpoints for user and task management",
+        "Implemented JWT authentication with Role-Based Access Control (RBAC)",
+        "Designed scalable backend architecture following MVC principles",
+        "Integrated responsive frontend with secure backend APIs",
+      ],
+
+      tech:
+        "React.js • Node.js • Express.js • MongoDB • Tailwind CSS • JWT",
+
       github:
         "https://github.com/ujwal284/TaskFlow-Full-Stack-Task-Management-App",
+
       live:
         "https://task-flow-full-stack-task-managemen.vercel.app/",
     },
 
     {
       title: "FitSync Application",
+
       description:
-        "A full-stack fitness tracking application that enables users to monitor workouts, manage fitness goals, and visualize personal progress through an intuitive dashboard.",
+        "A full-stack fitness tracking application enabling users to monitor workouts, track progress, and manage personal fitness goals through an intuitive dashboard.",
+
       highlights: [
-        "Developed secure authentication and user management",
-        "Designed APIs for workout tracking and data management",
-        "Created structured database models for efficient storage",
+        "Developed authentication and secure user management",
+        "Created REST APIs for workout tracking",
+        "Designed MongoDB database models for efficient data storage",
+        "Built responsive interfaces using React",
       ],
-      tech: "React.js, Node.js, Express.js, MongoDB",
-      github: "https://github.com/ujwal284/Dissertation-Project",
+
+      tech:
+        "React.js • Node.js • Express.js • MongoDB",
+
+      github:
+        "https://github.com/ujwal284/Dissertation-Project",
+    },
+
+    {
+      title: "E-Commerce Store API",
+
+      description:
+        "A scalable backend solution supporting products, users, authentication, and order management for e-commerce applications.",
+
+      highlights: [
+        "Designed RESTful APIs for product and order management",
+        "Implemented authentication and authorization using JWT",
+        "Optimized MongoDB queries for improved performance",
+        "Developed reusable middleware architecture",
+      ],
+
+      tech:
+        "Node.js • Express.js • MongoDB",
+
+      github:
+        "https://github.com/ujwal284/Store-Api",
     },
 
     {
       title: "Task Management API",
-      description:
-        "A production-ready RESTful API providing secure task management functionality with authentication, validation, and optimized database operations.",
-      highlights: [
-        "Implemented complete CRUD functionality",
-        "Integrated JWT authentication and protected routes",
-        "Developed middleware-based error handling architecture",
-      ],
-      tech: "Node.js, Express.js, MongoDB",
-      github: "https://github.com/ujwal284/Task-Manager-Api",
-    },
 
-    {
-      title: "E-Commerce Backend API",
       description:
-        "A backend solution for e-commerce applications handling products, users, authentication, and order processing through scalable API design.",
+        "A production-ready REST API providing secure task management with authentication, validation, and CRUD functionality.",
+
       highlights: [
-        "Designed product, user, and order management APIs",
-        "Implemented authentication and authorization systems",
-        "Optimized database queries for improved performance",
+        "Implemented complete CRUD operations",
+        "Built secure JWT authentication system",
+        "Created reusable middleware and error handling",
+        "Integrated MongoDB database operations",
       ],
-      tech: "Node.js, Express.js, MongoDB",
-      github: "https://github.com/ujwal284/Store-Api",
+
+      tech:
+        "Node.js • Express.js • MongoDB",
+
+      github:
+        "https://github.com/ujwal284/Task-Manager-Api",
     },
 
     {
       title: "Genbol Automation Tool",
+
       description:
-        "An automated web scraping solution developed to collect, process, and manage notice data efficiently from online sources.",
+        "A Python-based automation tool developed during my internship to collect, process, and organize notice data from multiple online sources.",
+
       highlights: [
-        "Built data extraction workflows using BeautifulSoup",
-        "Automated notice collection and processing",
-        "Handled dynamic website content retrieval and parsing",
+        "Automated web scraping using BeautifulSoup and Requests",
+        "Processed structured data efficiently",
+        "Reduced manual effort through automation",
+        "Improved repeatability of data collection workflows",
       ],
-      tech: "Python, BeautifulSoup, Requests",
-      github: "https://github.com/ujwal284",
+
+      tech:
+        "Python • BeautifulSoup • Requests",
+
+      github:
+        "https://github.com/ujwal284",
     },
   ];
 
   return (
     <section id="projects" className="projects">
       <div className="container">
-        <h2>Featured Work</h2>
+
+        <h2>Featured Projects</h2>
 
         <p className="section-description">
-          Selected projects showcasing expertise in full-stack development,
-          backend architecture, API development, automation, and scalable
-          software solutions.
+          A collection of full-stack applications, production-ready APIs,
+          automation tools, and real-world software solutions demonstrating my
+          experience in modern web development, backend engineering, and product
+          development.
         </p>
 
         <div className="projects-grid">
+
           {projectList.map((project, index) => (
+
             <div className="project-card" key={index}>
+
               <h3>{project.title}</h3>
 
               <p>{project.description}</p>
@@ -93,15 +153,18 @@ function Projects() {
                 ))}
               </ul>
 
-              <span>{project.tech}</span>
+              <div className="project-tech">
+                {project.tech}
+              </div>
 
               <div className="project-links">
+
                 <a
                   href={project.github}
                   target="_blank"
                   rel="noreferrer"
                 >
-                  View Code
+                  GitHub
                 </a>
 
                 {project.live && (
@@ -113,10 +176,15 @@ function Projects() {
                     Live Demo
                   </a>
                 )}
+
               </div>
+
             </div>
+
           ))}
+
         </div>
+
       </div>
     </section>
   );

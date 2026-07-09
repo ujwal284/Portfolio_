@@ -5,13 +5,15 @@ function CTA() {
 
         <div className="cta-card">
 
-          <h2>Let's Build Your Next Project</h2>
+          <h2>Let's Build Something Amazing Together</h2>
 
           <p>
-            Whether you need a business website, a custom web application,
-            backend development, API integrations, or ongoing technical support,
-            I'm available to help turn your ideas into reliable digital
-            solutions.
+            I'm currently open to Full Stack Software Engineer opportunities,
+            remote positions, and exciting projects where I can contribute by
+            building scalable web applications, modern user experiences, and
+            reliable backend systems. If you're looking for a passionate
+            developer who enjoys solving real-world problems, I'd love to hear
+            from you.
           </p>
 
           <div className="cta-buttons">
@@ -20,12 +22,21 @@ function CTA() {
               href="#contact"
               className="btn primary-btn"
             >
-              Start a Project
+              Contact Me
+            </a>
+
+            <a
+              href="/Ujwal_Raj_Khanal_ATS_Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="btn secondary-btn"
+            >
+              Download CV
             </a>
 
             <a
               href="mailto:ujwalkhanal284@gmail.com"
-              className="btn secondary-btn"
+              className="btn outline-btn"
             >
               Email Me
             </a>

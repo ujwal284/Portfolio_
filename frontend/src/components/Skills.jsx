@@ -2,35 +2,89 @@ function Skills() {
   const categories = [
     {
       title: "Frontend",
-      items: ["Next.js","React.js", "JavaScript", "HTML", "CSS"],
+      items: [
+        "Next.js",
+        "React.js",
+        "JavaScript (ES6+)",
+        "HTML5",
+        "CSS3",
+        "Tailwind CSS",
+      ],
     },
+
     {
       title: "Backend",
-      items: ["Node.js", "Express.js", "Django"],
+      items: [
+        "Node.js",
+        "Express.js",
+        "Django",
+        "REST APIs",
+        "JWT Authentication",
+        "Role-Based Access Control (RBAC)",
+      ],
     },
+
     {
       title: "Databases",
-      items: ["MongoDB", "PostgreSQL"],
+      items: [
+        "MongoDB",
+        "PostgreSQL",
+        "Supabase",
+        "Database Design",
+      ],
     },
+
     {
-      title: "Tools & Workflow",
-      items: ["Git", "GitHub", "Postman"],
+      title: "Programming Languages",
+      items: [
+        "JavaScript",
+        "Python",
+      ],
+    },
+
+    {
+      title: "Tools & Platforms",
+      items: [
+        "Git",
+        "GitHub",
+        "Postman",
+        "Vercel",
+        "Render",
+        "MongoDB Atlas",
+      ],
+    },
+
+    {
+      title: "Core Concepts",
+      items: [
+        "MVC Architecture",
+        "API Integration",
+        "Authentication",
+        "Authorization",
+        "Responsive Design",
+        "Deployment",
+        "Debugging",
+      ],
     },
   ];
 
   return (
     <section id="skills" className="skills">
       <div className="container">
-        <h2>Technical Expertise</h2>
+
+        <h2>Technical Skills</h2>
 
         <p className="section-description">
-          Technologies and tools used to deliver scalable and maintainable
-          digital solutions.
+          A strong foundation in modern full-stack development, backend
+          engineering, database design, and deployment technologies used to
+          build scalable, secure, and high-performance web applications.
         </p>
 
         <div className="expertise-grid">
+
           {categories.map((category, index) => (
             <div className="expertise-card" key={index}>
+
               <h3>{category.title}</h3>
 
               <ul>
@@ -38,9 +92,12 @@ function Skills() {
                   <li key={i}>{item}</li>
                 ))}
               </ul>
+
             </div>
           ))}
+
         </div>
+
       </div>
     </section>
   );

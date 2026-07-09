@@ -2,10 +2,14 @@ function Contact() {
   return (
     <section id="contact" className="contact">
       <div className="container">
-        <h2>Let's Discuss Your Project</h2>
+
+        <h2>Let's Connect</h2>
+
         <p className="contact-text">
-          Looking for a website, web application, backend solution, or technical support?
-          Let's discuss your requirements and explore the best solution for your project.
+          I'm currently open to Full Stack Software Engineer opportunities,
+          remote roles, and exciting collaborations. Whether you're a recruiter,
+          hiring manager, founder, or fellow developer, I'd be happy to connect
+          and discuss how I can contribute to your team or project.
         </p>
 
         <form
@@ -13,41 +17,96 @@ function Contact() {
           method="POST"
           className="contact-form"
         >
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
 
-          {/* Optional hidden fields */}
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_template" value="table" />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
 
-          <button type="submit" className="btn primary-btn">Send Message</button>
+          <textarea
+            name="message"
+            rows="6"
+            placeholder="Tell me about your opportunity or project..."
+            required
+          ></textarea>
+
+          {/* Hidden Fields */}
+
+          <input
+            type="hidden"
+            name="_captcha"
+            value="false"
+          />
+
+          <input
+            type="hidden"
+            name="_template"
+            value="table"
+          />
+
+          <input
+            type="hidden"
+            name="_subject"
+            value="New Portfolio Contact"
+          />
+
+          <button
+            type="submit"
+            className="btn primary-btn"
+          >
+            Send Message
+          </button>
+
         </form>
 
         <div className="contact-links">
-          <a href="mailto:ujwalkhanal284@gmail.com">Email Me</a>
+
+          <a href="mailto:ujwalkhanal284@gmail.com">
+            📧 Email
+          </a>
+
           <a
             href="https://www.linkedin.com/in/ujwal-raj-khanal-3749492bb/"
             target="_blank"
             rel="noreferrer"
           >
-            LinkedIn
+            💼 LinkedIn
           </a>
-          <a
-            href="https://wa.me/9847399383"
-            target="_blank"
-            rel="noreferrer"
-          >
-            WhatsApp
-          </a>
+
           <a
             href="https://github.com/ujwal284"
             target="_blank"
             rel="noreferrer"
           >
-            GitHub
+            💻 GitHub
           </a>
+
+          <a
+            href="https://ujwalrajkhanal.com.np"
+            target="_blank"
+            rel="noreferrer"
+          >
+            🌐 Portfolio
+          </a>
+
+          <a
+            href="https://wa.me/9779847399383"
+            target="_blank"
+            rel="noreferrer"
+          >
+            💬 WhatsApp
+          </a>
+
         </div>
+
       </div>
     </section>
   );
