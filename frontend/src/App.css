@@ -1,11 +1,3 @@
-/* =========================================================
-   PORTFOLIO — "SCHEMATIC" THEME
-   A technical-blueprint aesthetic: deep indigo ground, brass
-   ink, hairline rule work, and corner registration marks
-   borrowed from engineering drawings. Built for a developer
-   portfolio, where every section reads like a page from the
-   plan set.
-   ========================================================= */
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
 
@@ -367,6 +359,19 @@ body {
 .secondary-btn:hover {
   border-color: var(--brass);
   color: var(--brass-bright);
+}
+
+.outline-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--brass);
+  padding: 13px 10px;
+}
+
+.outline-btn:hover {
+  color: var(--brass-bright);
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 /* Resume Button */
