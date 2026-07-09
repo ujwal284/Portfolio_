@@ -26,7 +26,7 @@ function CTA() {
             </a>
 
             <a
-              href="/Ujwal_Raj_Khanal_ATS_Resume.pdf"
+              href="/resume.pdf"
               target="_blank"
               rel="noreferrer"
               className="btn secondary-btn"
