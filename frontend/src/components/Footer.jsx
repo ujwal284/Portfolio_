@@ -45,8 +45,7 @@ function Footer() {
         </div>
 
         <p className="copyright">
-          © {new Date().getFullYear()} Ujwal Raj Khanal. Built with React &
-          Tailwind CSS.
+          © {new Date().getFullYear()} Ujwal Raj Khanal.
         </p>
 
       </div>

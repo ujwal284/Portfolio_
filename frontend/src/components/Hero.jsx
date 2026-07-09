@@ -30,7 +30,7 @@ function Hero() {
         <div className="hero-stats">
 
           <div>
-            <h4>6+</h4>
+            <h4>20+</h4>
             <span>Projects Completed</span>
           </div>
 
@@ -72,7 +72,7 @@ function Hero() {
           </a>
 
           <a
-            href="/Ujwal_Raj_Khanal_ATS_Resume.pdf"
+            href="/resume.pdf"
             target="_blank"
             rel="noreferrer"
             className="btn secondary-btn"
